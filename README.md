@@ -47,20 +47,4 @@ proposal's live demonstration playbook.
 
 ## Next: Phase 2 (object search — earphones)
 
-Two realistic paths, in order of effort:
-
-1. **Classical feature matching (ORB/SIFT)** against a reference photo of
-   your *specific* earphones. No training data needed, fast to build, works
-   well for one known object — but won't generalize to earphones in general,
-   only that exact pair.
-2. **A small trained detector** (e.g. YOLOv8n via the `ultralytics` package)
-   fine-tuned on ~100–200 labeled photos of your desk with/without the
-   earphones in different spots. More setup (need to shoot and label photos),
-   but generalizes better and gives you real precision/recall numbers to
-   report against the proposal's stated benchmarks (≥92% precision, ≥88%
-   recall).
-
-Given the competition timeline, option 1 gets an end-to-end demo working
-fastest. Worth switching to option 2 once Phase 3 (lighting robustness) and
-Phase 4 (spatial audio) are wired up, since detection is the piece most
-likely to need iteration and real data.
+Will figure out phase two
